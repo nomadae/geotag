@@ -7,11 +7,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col>
+        <p class="ion-text-center" > {{ geoposition }} </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-no-padding ion-text-center">
+        <ion-button (click)="updateGPS()">
+          <ion-icon size="large" name="earth-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>

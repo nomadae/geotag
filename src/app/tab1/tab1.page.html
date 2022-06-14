@@ -9,9 +9,13 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Tab X</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <ion-item class="input-nombre">
+    <ion-label>Name </ion-label>
+    <ion-input placeholder="Name" #name></ion-input>
+  </ion-item>
+  <ion-button class="boton-save" expand="block" (click)="save(name)" >Save</ion-button>
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
